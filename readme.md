@@ -27,7 +27,10 @@ import { Suspense, use } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import useFetch from 'react-fetcher-hook';
 
-const service = () => fetch('https://jsonplaceholder.typicode.com/todos/1').then(res => res.json());
+const service = () => {
+  const url = 'https://jsonplaceholder.typicode.com/todos/1';
+  return fetch(url).then(res => res.json());
+}
 
 const Example: FC = () => {
   const { promise, fetcher } = useFetch(service);
@@ -55,6 +58,26 @@ const TodoData: FC<{ promise: Promise<any> }> = props => {
     </>
   );
 };
+```
+
+### Abortable Requests (for StrictMode)
+```tsx
+const service = (signal: AbortSignal) => {
+  const url = 'https://jsonplaceholder.typicode.com/todos/1';
+  return fetch(url, { signal }).then(res => res.json());
+}
+```
+
+### Request with Arguments
+
+You can pass multiple arguments to the `fetcher` function.
+And if the `service` function has a last argument of type `AbortSignal`, then the request will be abortable.
+
+```tsx
+const service = (entity: string, id: number, signal: AbortSignal) => {
+  const url = `https://jsonplaceholder.typicode.com/${entity}/${id}`;
+  return fetch(url, { signal }).then(res => res.json());
+}
 ```
 
 ## API

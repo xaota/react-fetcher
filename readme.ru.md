@@ -55,6 +55,26 @@ const TodoData: FC<{ promise: Promise<any> }> = props => {
 };
 ```
 
+### Abortable Requests (for StrictMode)
+```tsx
+const service = (signal: AbortSignal) => {
+  const url = 'https://jsonplaceholder.typicode.com/todos/1';
+  return fetch(url, { signal }).then(res => res.json());
+}
+```
+
+### Request with Arguments
+
+Вы можете передать любое количество аргументов в функцию `service`.
+Если у функции `service` последний аргумент имеет тип `AbortSignal`, то запрос будет отменяемым.
+
+```tsx
+const service = (entity: string, id: number, signal: AbortSignal) => {
+  const url = `https://jsonplaceholder.typicode.com/${entity}/${id}`;
+  return fetch(url, { signal }).then(res => res.json());
+}
+```
+
 ## API
 `useFetch(service, initial?)`
 
