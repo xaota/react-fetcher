@@ -1,5 +1,5 @@
 {
-  "name": "react-fetcher",
+  "name": "react-use-fetcher",
   "version": "1.0.0",
   "description": "Fetching data with use + suspense in React 19+",
   "main": "index.js",
@@ -37,10 +37,10 @@
   "author": "https://github.com/xaota",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xaota/react-fetcher.git"
+    "url": "git+https://github.com/xaota/react-use-fetcher.git"
   },
-  "homepage": "https://github.com/xaota/react-fetcher",
-  "bugs": "https://github.com/xaota/react-fetcher/issues?q=is:issue+label:bug",
+  "homepage": "https://github.com/xaota/react-use-fetcher",
+  "bugs": "https://github.com/xaota/react-use-fetcher/issues?q=is:issue+label:bug",
   "publishConfig": {
     "access": "public"
   },

@@ -17,7 +17,7 @@ It returns a promise that can be handled in React 19+ style using the `use` hook
 ## Installation
 
 ```shell
-$ npm install react-fetcher
+$ npm install react-use-fetcher
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ $ npm install react-fetcher
 ```tsx
 import { Suspense, use } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import useFetch from 'react-fetcher';
+import useFetch from 'react-use-fetcher';
 
 const service = () => fetch('https://jsonplaceholder.typicode.com/todos/1').then(res => res.json());
 
