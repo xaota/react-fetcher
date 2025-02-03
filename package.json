@@ -1,6 +1,6 @@
 {
   "name": "react-fetcher-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fetching data with use + suspense in React 19+",
   "main": "index.js",
   "types": "index.ts",
