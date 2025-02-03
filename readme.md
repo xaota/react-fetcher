@@ -1,6 +1,8 @@
 # useFetch for React 19+
 
-> You can read this readme in [English](./readme.md).
+> This package from 🇷🇺 Russia with love!
+>
+> You can read this readme in [Russian](./readme.ru.md).
 
 ## Motivation / Features
 This hook does not return the request result, loading state, or error.
