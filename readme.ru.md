@@ -15,7 +15,7 @@
 ## Installation
 
 ```shell
-$ npm install react-use-fetcher
+$ npm install react-fetcher-hook
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ $ npm install react-use-fetcher
 ```tsx
 import { Suspense, use } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import useFetch from 'react-use-fetcher';
+import useFetch from 'react-fetcher-hook';
 
 const service = () => fetch('https://jsonplaceholder.typicode.com/todos/1').then(res => res.json());
 
