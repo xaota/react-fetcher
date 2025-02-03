@@ -1,0 +1,53 @@
+{
+  "name": "react-use-fetch",
+  "version": "1.0.0",
+  "description": "Fetching data with use + suspense in React 19+",
+  "main": "index.js",
+  "types": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <20.0.0",
+    "@types/react-dom": ">=16.8.0 <20.0.0",
+    "react": ">=16.8.0 <20.0.0",
+    "react-dom": ">=16.8.0 <20.0.0"
+  },
+  "keywords": [
+    "react",
+    "fiber",
+    "typescript",
+    "hooks",
+    "esnext",
+    "data flow",
+    "suspense",
+    "fetch",
+    "use",
+    "useFetch",
+    "errorboundary",
+    "error boundary"
+  ],
+  "license": "Unlicense",
+  "author": "https://github.com/xaota",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaota/react-use-fetch.git"
+  },
+  "homepage": "https://github.com/xaota/react-use-fetch",
+  "bugs": "https://github.com/xaota/react-use-fetch/issues?q=is:issue+label:bug",
+  "publishConfig": {
+    "access": "public"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/xaota"
+    }
+  ]
+}
